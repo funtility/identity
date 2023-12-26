@@ -1,0 +1,29 @@
+<!DOCTYPE htlm>
+<html lang="en">
+    <head>
+        <title>Funtility JS Plugin</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+        <link async rel="stylesheet" href="./site.css">
+
+        <!--Funtility auth-->
+        <link async rel="stylesheet" href="./funtility-ui.css">
+        <script src="./funtility-ui.js"></script>
+        <script src="./funtility-api.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div id="funtility"></div>
+        </div>
+        <div id="content"></div>
+    </body>
+    <script>
+        let funtilityApi, funtilityUi
+        window.onload = () => {
+            // detect if this is the development environment or hosted on a server
+            funtilityApi = window.location.host ? new FuntilityAPI("Funtility Plugin") : new FuntilityAPI("Funtility Plugin",'http://localhost:5194/')
+            funtilityUi = new FuntilityUI(funtilityApi)
+        }
+    </script>
+</html>

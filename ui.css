@@ -1,0 +1,72 @@
+#funtility {
+    color: rgb(102, 191, 255);
+    font-size: 18px;
+}
+
+.fnt-log-out {
+    cursor: pointer;
+    background-image: url('./log-out.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 30px;
+}
+
+#fnt-modal-bg {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr auto 3fr;
+    grid-template-areas: '. . .' '. modal .' '. . .';
+    z-index:100;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:rgba(0,0,0,.8);
+}
+
+.fnt-modal {
+    grid-area: modal;
+    padding: 12px;
+    color: rgb(168 168 168);
+    background-color: rgb(0, 0, 0);
+    border-radius: 12px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.fnt-fieldset {
+    display: grid;
+    border-style: solid;
+    border-radius: 8px;
+    margin-top: -10px;
+    min-width: 250px;
+    max-width: 260px;
+}
+
+.fnt-fieldset legend {
+    text-align: left;
+    letter-spacing: 3px;
+    margin-inline-start: 12px;
+}
+
+.fnt-fieldset input {
+    border: none;
+    outline: none;
+    padding: 6px;
+    border-radius: 6px;
+    min-width: 200px;
+    font-size: 18px;
+}
+
+.fnt-modal a {
+    color: #689ac1;
+    font-style: italic;
+    display: block;
+    cursor: pointer;
+}
+
+.fnt-err {
+    color: rgb(200, 0, 0);
+    text-align: center;
+}
