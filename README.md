@@ -20,3 +20,7 @@ Then add a div in the index.html where you want the sign in button to appear.
 The ui.css is simple to override if you want to change the styles. See the ui.css file for the styles used.
 
 See the index.html for an example of how to construct the FuntilityAPI and FuntilityUI classes.
+
+## NOTE: This repo exposes raw files via GitHub pages.
+
+To link to these files using the urls provided above, a GitHub page was created off of the main branch. Then the links can point to that file in the pages url.
