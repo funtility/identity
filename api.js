@@ -317,6 +317,7 @@ class FuntilityAPI
         {
             result.append('Authorization', `bearer ${this.state.authToken}`)
         }
+        result.append('Access-Control-Allow-Origin', '*')
         result.append('Content-Type', 'application/json;charset=UTF-8')
         return result
     }
